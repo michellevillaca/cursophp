@@ -8,7 +8,7 @@
 <body>
     <h1>
         <?php 
-            echo "Olá, Mundo!"; //podemos usar o comando 'print' em vez do echo.
+            echo "Olá, Mundo! \u{1F30E}"; //podemos usar o comando 'print' em vez do echo.
         ?>
     </h1>
     <p>Vamos tentar nos livrar da maldição</p>
