@@ -34,6 +34,14 @@
         //coerções:
         $v6 = (float) "950"; // entre aspas, considera-se uma string, mas eu quero que se converta para float:
         var_dump($v6);
+
+        /* valores booleanos:
+        true = 1
+        false = *vazio* */
+        $casado = false;
+        echo "<br> O valor para a variável 'casado' é $casado";
+        $solteiro = true;
+        echo "<br> O valor para a variável 'solteiro' é $solteiro";
     ?>
 </body>
 </html>
