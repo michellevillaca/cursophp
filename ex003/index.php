@@ -24,6 +24,16 @@
         var_dump($v2);
         $v3 = "Michelle";
         var_dump($v3);
+        $v4 = 3e2; // = 3x10(2)
+        echo "<br> O valor é $v4 <br>";
+        var_dump($v4);
+        //eu posso "forçar a barra" e fazer com que o float vire int ao "mandar" o comando:
+        $v5 = (int)3e2; //o nome disso é "coerção"
+        var_dump($v5);
+
+        //coerções:
+        $v6 = (float) "950"; // entre aspas, considera-se uma string, mas eu quero que se converta para float:
+        var_dump($v6);
     ?>
 </body>
 </html>
