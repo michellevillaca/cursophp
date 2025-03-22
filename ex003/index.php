@@ -41,7 +41,17 @@
         $casado = false;
         echo "<br> O valor para a variável 'casado' é $casado";
         $solteiro = true;
-        echo "<br> O valor para a variável 'solteiro' é $solteiro";
+        echo "<br> O valor para a variável 'solteiro' é $solteiro <br>";
+
+        // Outros tipos primitivos:
+        $vetor = [6,2.5,"Maria",9,3,5, false];
+        var_dump($vetor);
+
+        class Pessoa {
+            private string $nome;
+        }
+        $p = new Pessoa;
+        var_dump($p);
     ?>
 </body>
 </html>
