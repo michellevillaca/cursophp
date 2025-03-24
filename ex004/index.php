@@ -18,6 +18,12 @@
         echo "Eu moro em ESTADO. <br>";
         echo 'Eu moro em ESTADO. <br>';
         echo "Eu moro em " .ESTADO; //a interpretação do dado da constante só ocorrerá dessa forma, com o operador de concatenação.
+
+        //sequências de escape:
+        $Nome = 'Gustavo';
+        $Sobrenome = 'Guanabara';
+        $Apelido = 'Gafanhoto';
+        echo "<br> $Nome \"$Apelido\" $Sobrenome";
     ?>
 </body>
 </html>
