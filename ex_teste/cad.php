@@ -17,7 +17,13 @@
             $anoatual = $_GET["anoatual"];
             $anonasc = $_GET["anonasc"];
             echo "<p>Olá, $nome! De acordo com o seu formulário, você tem $idade e nasceu no ano de $anonasc.</p>
-            <p>Atualmente, estamos no ano de $anoatual.</p>"
+            <p>Atualmente, estamos no ano de $anoatual.</p>";
+
+            $soma = $anoatual + $idade + $anonasc;
+            $somadiv = $anoatual + $anonasc / $idade;
+            $subtraçao_multiplicaçao = $anoatual*$idade - $anonasc;
+            echo "<p>Vamos fazer algumas operações com os números preenchidos no formulário:</p>
+            <p><ul><li>A soma de todos os números:<br>$idade + $anonasc + $anoatual = $soma <li> O ano atual somado ao seu ano de nascimento dividido pela sua idade:<br>$anoatual + $anonasc / $idade = $somadiv <li>O ano atual vezes a sua idade menos o ano de seu nascimento:<br>$anoatual*$idade - $anonasc = $subtraçao_multiplicaçao</p>"
         ?>
     </main>
 </body>
