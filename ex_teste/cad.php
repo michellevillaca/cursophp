@@ -22,8 +22,9 @@
             $soma = $anoatual + $idade + $anonasc;
             $somadiv = $anoatual + $anonasc / $idade;
             $subtraçao_multiplicaçao = $anoatual*$idade - $anonasc;
+            $multiplicaçao_divisao = $anoatual * $anonasc / $idade;
             echo "<p>Vamos fazer algumas operações com os números preenchidos no formulário:</p>
-            <p><ul><li>A soma de todos os números:<br>$idade + $anonasc + $anoatual = $soma <li> O ano atual somado ao seu ano de nascimento dividido pela sua idade:<br>$anoatual + $anonasc / $idade = $somadiv <li>O ano atual vezes a sua idade menos o ano de seu nascimento:<br>$anoatual*$idade - $anonasc = $subtraçao_multiplicaçao</p>"
+            <p><ul><li>A soma de todos os números:<br>$idade + $anonasc + $anoatual = $soma<br><br> <li> O ano atual somado ao seu ano de nascimento dividido pela sua idade:<br>$anoatual + $anonasc / $idade = $somadiv<br><br> <li>O ano atual vezes a sua idade menos o ano de seu nascimento:<br>$anoatual * $idade - $anonasc = $subtraçao_multiplicaçao<br><br> <li>O ano atual vezes o seu ano de nascimento dividido pela sua idade:<br>$anoatual * $anonasc / $idade = $multiplicaçao_divisao</p>"
         ?>
     </main>
 </body>
