@@ -15,7 +15,7 @@
             $suc = $num + 1;
             echo "<p>O número escolhido foi $num.<br>O seu antecessor é $ant.<br>O seu sucessor é $suc."
         ?>
-         <p><button type="button"><a href="javascript:history.go(-1)">Voltar para a página anterior.</a></button></p>
+         <p><button type="button"><a href="javascript:history.go(-1)">Voltar</a></button></p>
     </section>
 </body>
 </html>
