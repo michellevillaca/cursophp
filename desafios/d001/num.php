@@ -10,12 +10,12 @@
     <section>
         <h1>Resultado Final</h1>
         <?php 
-            $num = $_GET["número"];
+            $num = $_GET["número"] ?? 0;
             $ant = $num - 1;
             $suc = $num + 1;
-            echo "<p>O número escolhido foi <strong>$num</strong>.<br>O seu antecessor é <strong>$ant</strong>.<br>O seu sucessor é <strong>$suc</strong>."
+            echo "<p>O número escolhido foi <strong>$num</strong>.<br>O seu <em>antecessor</em> é <strong>$ant</strong>.<br>O seu <em>sucessor</em> é <strong>$suc</strong>.</p>"
         ?>
-         <p><button type="button"><a href="javascript:history.go(-1)">Voltar</a></button></p>
+        <button type="button" onclick="javascript:window.location.href='index.html'">&#x2B05; Voltar</button>
     </section>
 </body>
 </html>
