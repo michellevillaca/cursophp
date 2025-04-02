@@ -14,7 +14,7 @@
             $num = rand(0,100);
             echo "<p>O valor gerado foi <strong>$num</strong>.</p>";
         ?>
-           <input type="reset" value="Gerar novamente">
+        <button onclick="javascript:window.location.href='index.php'">&#x1F504; Gerar novamente</button>
     </section>
 </body>
 </html>
