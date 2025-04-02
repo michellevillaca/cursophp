@@ -60,12 +60,10 @@ h2, h3, h4 {
 }
 
 a {
-    color: #15142b;
-    background-color: rgba(55, 41, 145, 0.1);
+    color: #ffffff;
     padding: 0 3px;
     font-weight: 600;
     text-decoration: none;
-    border-bottom: .5px dotted #39221b;
 }
 
 a:hover {
