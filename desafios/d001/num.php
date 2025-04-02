@@ -6,6 +6,14 @@
     <title>Desafio 1 - Informe um Número</title>
 </head>
 <body>
-    
+    <section>
+        <h1>Resultado Final</h1>
+        <?php 
+            $num = $_GET["número"];
+            $ant = $num - 1;
+            $suc = $num + 1;
+            echo "<p>O número escolhido foi $num.<br>O seu antecessor é $ant.<br>O seu sucessor é $suc."
+        ?>
+    </section>
 </body>
 </html>
