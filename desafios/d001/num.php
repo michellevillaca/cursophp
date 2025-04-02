@@ -13,7 +13,7 @@
             $num = $_GET["número"];
             $ant = $num - 1;
             $suc = $num + 1;
-            echo "<p>O número escolhido foi $num.<br>O seu antecessor é $ant.<br>O seu sucessor é $suc."
+            echo "<p>O número escolhido foi <strong>$num</strong>.<br>O seu antecessor é <strong>$ant</strong>.<br>O seu sucessor é <strong>$suc</strong>."
         ?>
          <p><button type="button"><a href="javascript:history.go(-1)">Voltar</a></button></p>
     </section>
