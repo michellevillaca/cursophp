@@ -12,7 +12,7 @@
         <?php
             $real = $_REQUEST["reais"];
             $dolar = 5.62;
-            $conversao = $dolar / $real;
+            $conversao = $real / $dolar;
             echo "<p>Seus R$ ". number_format($real, 2,',','.') . " equivalem a <strong>US$ " . number_format($conversao, 2,',','.') . "<br>*Cotação fixa de R$ 5,62</strong> informada diretamente no código.</p>"
         ?>
         <button onclick="javascript:history.go(-1)">Voltar</button>
