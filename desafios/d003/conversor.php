@@ -13,7 +13,12 @@
             $real = $_REQUEST["reais"];
             $dolar = 5.62;
             $conversao = $real / $dolar;
-            echo "<p>Seus R$ ". number_format($real, 2,',','.') . " equivalem a <strong>US$ " . number_format($conversao, 2,',','.') . "<br>*Cotação fixa de R$ 5,62</strong> informada diretamente no código.</p>"
+
+            // Formatação de moedas com internacionalização.
+            // Biblioteca intl (Internallization PHP).
+            $padrão = numfmt_create("pt_BR", NumberFormatter::CURRENCY);
+
+            echo "<p>Seus ". numfmt_format_currency($padrão, $real, "BRL") . " equivalem a <strong>" . numfmt_format_currency($padrão, $conversao, "USD") . "<br>*Cotação fixa de R$ 5,62</strong> informada diretamente no código.</p>"
         ?>
         <button onclick="javascript:history.go(-1)">Voltar</button>
     </section>
