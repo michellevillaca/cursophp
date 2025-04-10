@@ -32,6 +32,9 @@
 
                 echo "<h1>Superglobal ENV</h1>";
                 var_dump($_ENV);
+
+                echo "<h1>Superglobal SERVER</h1>";
+                var_dump($_SERVER);
             ?>
         </pre>
     </main>
