@@ -26,9 +26,9 @@
             $r_quadrada = sqrt($número);
             $r_cúbica = pow($número, 1.0/3.0);
             echo "<p>Analisando o <strong>número $número</strong>:
-            <ul><li> A sua raiz quadrada é <strong>$r_quadrada</strong>
-            <li> A sua raiz cúbica é <strong>$r_cúbica</strong></ul>
-            </p>"
+            <ul><li> A sua raiz quadrada é <strong>" . number_format($r_quadrada, 3, ",", ".") . "</strong>
+            <li> A sua raiz cúbica é <strong>" . number_format($r_cúbica, 3, ",",".") . "</strong></ul>
+            </p>";
         ?>
     </section>
 </body>
