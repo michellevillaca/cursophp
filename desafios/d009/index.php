@@ -36,8 +36,7 @@
             $média_ponderada = (($v1*$p1) + ($v2*$p2)) / ($p1 + $p2);
 
             echo "<p>Analisando os valores $v1 e $v2:
-            <ul><li> <strong>A Média Aritmética Simples</strong> entre os valores é igual a $média_simples.
-            <li> A <strong>Média Aritmética Ponderada</strong> com pesos $p1 e $p2 é igual a $média_ponderada.</ul></p>"
+            <ul><li> <strong>A Média Aritmética Simples</strong> entre os valores é igual a " . number_format($média_simples, 2, ",",".") . ".<li> A <strong>Média Aritmética Ponderada</strong> com pesos $p1 e $p2 é igual a " . number_format($média_ponderada, 2, ",",".") . ".</ul></p>"
         ?>
     </section>
 </body>
