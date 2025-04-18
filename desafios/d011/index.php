@@ -8,19 +8,21 @@
 </head>
 <body>
     <?php 
-        $preço = $_GET['preço']??1;
-        $porcentagem = $_GET['reajuste']??25;
-        $fórmula = ($preço*$porcentagem) / 100;
+        $preço = $_GET['preço']?? '0';
+        $porcentagem = $_GET['reajuste']?? '0';
+
+        $aumento = ($preço*$porcentagem) / 100;
+        $novo_preço = $preço + $aumento;
     ?>
 
     <main>
         <h1>Reajustador de Preços</h1>
         <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
             <label for="preço">Preço do Produto (R$)</label>
-            <input type="number" name="preço" id="preço" min="0.10" step="0.01">
+            <input type="number" name="preço" id="preço" min="0.10" step="0.01" value="<?=$preço?>">
 
             <label for="reajuste">Qual será o percentual de reajuste? (<strong><span id="porcentagem">?</span>%</strong>)</label>
-            <input type="range" name="reajuste" id="reajuste" min="0" max="100" step="1" value="50" oninput="mudaValor()">
+            <input type="range" name="reajuste" id="reajuste" min="0" max="100" step="1" oninput="mudaValor()" value="<?=$porcentagem?>">
 
             <input type="submit" value="Reajustar">
         </form>
@@ -28,13 +30,13 @@
 
     <section id="resultado">
         <h2>Resultado do Reajuste</h2>
-        <p>O produto que custava R$[??], com <strong>[??] de aumento</strong> vai passar a custar <strong>R$[??]</strong> a partir de agora.</p>
+        <p>O produto que custava R$<?=$preço?>, com <strong><?=$porcentagem?> de aumento</strong> vai passar a custar <strong>R$<?=$novo_preço?></strong> a partir de agora.</p>
     </section>
 
     <script>
         // Declarações automáticas
         mudaValor()
-        
+
        function mudaValor() {
         porcentagem.innerText = reajuste.value
        }
