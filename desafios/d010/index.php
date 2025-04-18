@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 9 - Médias Aritméticas</title>
+    <title>Desafio 10 - Cálculo de Idade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
