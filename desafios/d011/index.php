@@ -19,8 +19,8 @@
             <label for="preço">Preço do Produto (R$)</label>
             <input type="number" name="preço" id="preço" min="0.10" step="0.01">
 
-            <label for="reajuste">Qual será o percentual de reajuste? (<strong><span id="porcentagem">50%</span></strong>)</label>
-            <input type="range" name="reajuste" id="reajuste" min="0" max="100" step="1" value="50">
+            <label for="reajuste">Qual será o percentual de reajuste? (<strong><span id="porcentagem">?</span>%</strong>)</label>
+            <input type="range" name="reajuste" id="reajuste" min="0" max="100" step="1" value="50" oninput="mudaValor()">
 
             <input type="submit" value="Reajustar">
         </form>
@@ -32,12 +32,12 @@
     </section>
 
     <script>
-        const range = document.getElementById("reajuste");
-        const porcentagem = document.getElementById("porcentagem");
-
-        range.addEventListener("input", function() {
-            porcentagem.textContent = range.value + "%";
-        })
+        // Declarações automáticas
+        mudaValor()
+        
+       function mudaValor() {
+        porcentagem.innerText = reajuste.value
+       }
     </script>
 </body>
 </html>
