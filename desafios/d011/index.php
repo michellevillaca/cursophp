@@ -30,7 +30,7 @@
 
     <section id="resultado">
         <h2>Resultado do Reajuste</h2>
-        <p>O produto que custava R$<?=$preço?>, com <strong><?=$porcentagem?> de aumento</strong> vai passar a custar <strong>R$<?=$novo_preço?></strong> a partir de agora.</p>
+        <p>O produto que custava R$<?=number_format($preço, 2, ",",".")?>, com <strong><?=$porcentagem?> de aumento</strong> vai passar a custar <strong>R$<?=number_format($novo_preço, 2, ",",".")?></strong> a partir de agora.</p>
     </section>
 
     <script>
