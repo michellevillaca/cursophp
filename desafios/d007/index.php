@@ -14,7 +14,7 @@
         <h1>Informe seu salário</h1>
         <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
             <label for="salário">Salário (R$)</label>
-            <input type="number" name="salário" id="salário" step="0.01">
+            <input type="number" name="salário" id="salário" step="0.01" value="<?=$salário?>">
             <input type="submit" value="Calcular">
         </form>
     </main>
