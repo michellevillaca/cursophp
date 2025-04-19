@@ -16,7 +16,7 @@
             <label for="v1">Dividendo</label>
             <input type="number" name="v1" id="v1" min="0" value="<?=$dividendo?>">
             <label for="v2">Divisor</label>
-            <input type="number" name="v2" id="v2" min="1" value="<?$divisor?>">
+            <input type="number" name="v2" id="v2" min="1" value="<?=$divisor?>">
             <input type="submit" value="Analisar">
         </form>
     </main>
