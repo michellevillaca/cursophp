@@ -8,17 +8,18 @@
 </head>
 <body>
     <?php 
-        $nascimento = $_GET['nasc']??2000;
-        $anoatual = $_GET['ano']??2025;
+        $nascimento = $_GET['nasc']??'2000';
+        $atual = date("Y");
+        $anoatual = $_GET['ano'] ?? $atual;
     ?>
 
     <main>
         <h1>Calculando a sua idade</h1>
         <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
             <label for="nasc">Em que ano você nasceu?</label>
-            <input type="number" name="nasc" id="nasc" value="<?=$nascimento?>">
+            <input type="number" name="nasc" id="nasc" min="1990" value="<?=$nascimento?>">
             <label for="ano">Quer saber sua idade em que ano? (atualmente estamos em <strong>2025.)</strong></label>
-            <input type="number" name="ano" id="ano" value="<?=$anoatual?>">
+            <input type="number" name="ano" id="ano" min="1900" value="<?=$anoatual?>">
             <input type="submit" value="Qual será a minha idade?">
         </form>
     </main>
