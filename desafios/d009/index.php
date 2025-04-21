@@ -8,23 +8,23 @@
 </head>
 <body>
     <?php 
-        $v1 = $_GET['v1']??0;
-        $p1 = $_GET['p1']??1;
-        $v2 = $_GET['v2']??0;
-        $p2 = $_GET['p2']??1;
+        $v1 = $_GET['v1'] ?? '';
+        $p1 = $_GET['p1'] ?? '';
+        $v2 = $_GET['v2'] ?? '';
+        $p2 = $_GET['p2'] ?? '';
     ?>
 
     <main>
         <h1>Médias Aritméticas</h1>
         <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
             <label for="v1">1º valor</label>
-            <input type="number" name="v1" id="v1" value="<?=$v1?>">
+            <input type="number" name="v1" id="v1" required value="<?=$v1?>">
             <label for="p1">Peso do 1º valor</label>
-            <input type="number" name="p1" id="p1" value="<?=$p1?>">
+            <input type="number" name="p1" id="p1" min="1" required value="<?=$p1?>">
             <label for="v2">2º valor</label>
-            <input type="number" name="v2" id="v2" value="<?=$v2?>">
+            <input type="number" name="v2" id="v2" required value="<?=$v2?>">
             <label for="p2">Peso do 2º valor</label>
-            <input type="number" name="p2" id="p2" value="<?=$p2?>">
+            <input type="number" name="p2" id="p2" min="1" required value="<?=$p2?>">
             <input type="submit" value="Calcular Médias">
         </form>
     </main>
